@@ -17,11 +17,11 @@
 
 ---
 
-## 🌟 Why TravelAround AI?
+## 🌟 Why TravelAI?
 
 Group travel planning is chaotic — different preferences, budgets, schedules, and endless WhatsApp messages 😵‍💫.
 
-**TravelAround AI fixes this.**
+**TravelAI fixes this.**
 
 It acts as a **smart travel coordinator** that listens to everyone, thinks intelligently, and delivers a plan that works for the whole group.
 
@@ -85,8 +85,8 @@ AI-driven planning with clarity, collaboration, and confidence.
 
 ```bash
 # Clone repository
-git clone https://github.com/vikash0064/TravelAround.Ai.git
-cd TravelAround.Ai
+git clone https://github.com/Shreyyyi/TravelAI.git
+cd TravelAi
 
 # Backend setup
 cd backend
