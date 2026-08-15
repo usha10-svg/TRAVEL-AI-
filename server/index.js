@@ -41,9 +41,29 @@ if (!process.env.SESSION_SECRET) {
     process.env.SESSION_SECRET = SESSION_SECRET;
 }
 
+// const io = new Server(httpServer, {
+//     cors: {
+//         origin: ["http://localhost:5173", "http://localhost:3000"], // Explicit origins for credentials
+//         credentials: true,
+//         methods: ["GET", "POST"]
+//     }
+// });
+
+// // Make io accessible to our router
+// app.set('io', io);
+
+// // Middleware
+// app.use(express.json());
+
+// // CORS Configuration for Sessions
+// app.use(cors({
+//     origin: ["http://localhost:5173", "http://localhost:3000"], // Match your frontend URL
+//     credentials: true
+// }));
+
 const io = new Server(httpServer, {
     cors: {
-        origin: ["http://localhost:5173", "http://localhost:3000"], // Explicit origins for credentials
+        origin: ["http://localhost:5173", "http://localhost:3000", "https://travel-ai-rho-pink.vercel.app"],
         credentials: true,
         methods: ["GET", "POST"]
     }
@@ -57,7 +77,7 @@ app.use(express.json());
 
 // CORS Configuration for Sessions
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"], // Match your frontend URL
+    origin: ["http://localhost:5173", "http://localhost:3000", "https://travel-ai-rho-pink.vercel.app"],
     credentials: true
 }));
 
