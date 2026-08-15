@@ -114,7 +114,7 @@ npm start
 ```
 
 📍 Frontend: [http://localhost:3000](http://localhost:3000)
-📍 Backend: [http://localhost:5000](http://localhost:5000)
+📍 Backend: [https://travelai-9hed.onrender.com](https://travelai-9hed.onrender.com)
 
 ---
 

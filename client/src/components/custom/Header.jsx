@@ -31,7 +31,7 @@ function Header() {
             fetchNotifications();
 
             // Connect Socket
-            const socketUrl = import.meta.env.PROD ? window.location.origin : "http://localhost:5000";
+            const socketUrl = import.meta.env.PROD ? window.location.origin : "https://travelai-9hed.onrender.com";
             const newSocket = io(socketUrl, {
                 withCredentials: true
             });

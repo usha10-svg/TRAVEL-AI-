@@ -2,7 +2,7 @@ import axios from "axios";
 
 const isProd = import.meta.env.PROD;
 const api = axios.create({
-    baseURL: isProd ? "/api" : "http://localhost:5000/api",
+    baseURL: isProd ? "/api" : "https://travelai-9hed.onrender.com/api",
     withCredentials: true, // Enable cookies for session
 });
 

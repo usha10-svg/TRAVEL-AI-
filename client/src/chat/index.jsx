@@ -111,7 +111,7 @@ function Chat() {
             if (err.response?.status === 403) setAccessDenied(true);
         });
 
-        const socketUrl = import.meta.env.PROD ? window.location.origin : "http://localhost:5000";
+        const socketUrl = import.meta.env.PROD ? window.location.origin : "https://travelai-9hed.onrender.com";
         const newSocket = io(socketUrl, { withCredentials: true });
         newSocket.on("connect", () => newSocket.emit("join_chat", { tripId }));
         setSocket(newSocket);
