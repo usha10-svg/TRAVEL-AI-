@@ -1,5 +1,7 @@
+
 import express from "express";
 import mongoose from "mongoose";
+import dns from "dns";
 // import jwt from "jsonwebtoken"; // Removed JWT
 import User from "./models/User.js";
 import cors from "cors";
@@ -11,6 +13,7 @@ import { fileURLToPath } from "url";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
