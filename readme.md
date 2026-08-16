@@ -17,7 +17,7 @@
 
 ---
 
-## 🌟 Why TravelAI?
+## 🌟 Why Travel AI?
 
 Group travel planning is chaotic — different preferences, budgets, schedules, and endless WhatsApp messages 😵‍💫.
 
