@@ -276,13 +276,16 @@ mongoose.connect(process.env.MONGO_URI)
     .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
 // Serve Static files in Production
-const buildPath = path.join(__dirname, "../client/dist");
-app.use(express.static(buildPath));
+
+// const buildPath = path.join(__dirname, "../client/dist");
+
+// app.use(express.static(buildPath));
 
 // Standard SPA Catch-All
-app.get("*", (req, res) => {
-    res.sendFile(path.join(buildPath, "index.html"));
-});
+
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(buildPath, "index.html"));
+// });
 
 // Start Server
 httpServer.listen(PORT, () => {
