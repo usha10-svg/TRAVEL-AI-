@@ -31,8 +31,9 @@ function Header() {
             fetchNotifications();
 
             // Connect Socket
-            const socketUrl = import.meta.env.PROD ? window.location.origin : "https://travelai-9hed.onrender.com";
-            const newSocket = io(socketUrl, {
+            const socketUrl = import.meta.env.PROD
+  ? "https://travel-ai-s5ep.vercel.app"
+  : "http://localhost:5000";
                 withCredentials: true
             });
             setSocket(newSocket);
