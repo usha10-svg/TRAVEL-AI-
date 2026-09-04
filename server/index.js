@@ -55,11 +55,15 @@ if (!process.env.SESSION_SECRET) {
 // // Middleware
 // app.use(express.json());
 
-// // CORS Configuration for Sessions
-// app.use(cors({
-//     origin: ["http://localhost:5173", "http://localhost:3000"], // Match your frontend URL
-//     credentials: true
-// }));
+// CORS Configuration for Sessions
+app.use(cors({
+    origin: [
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://travel-6gbg1xksc-jansetu1.vercel.app"
+    ],
+    credentials: true
+}));
 
 const io = new Server(httpServer, {
     cors: {
